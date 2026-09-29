@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vijay P | DevOps Engineer | CI/CD | Docker | Kubernetes</title>
+<meta name="description" content="Vijay P is a Computer Science Engineer specializing in DevOps, CI/CD automation, Docker, Kubernetes, Jenkins and cloud technologies.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Vijay P | DevOps Engineer | CI/CD | Docker | Kubernetes">
+<meta property="og:description" content="Computer Science Engineer focused on DevOps, CI/CD automation, containerization, Kubernetes and cloud technologies.">
+<meta name="theme-color" content="#0b0f14">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230b0f14'/><text x='16' y='22' font-size='16' text-anchor='middle' fill='%234fb3a5' font-family='monospace'>vp</text></svg>">
+<style>
+:root{--bg:#0b0f14;--pn:#10161d;--bd:#1f2a35;--tx:#d6dee6;--mu:#8b98a6;--ac:#4fb3a5;--ac2:#7cc4ff;--r:8px;--mono:ui-monospace,"JetBrains Mono","SF Mono",Menlo,Consolas,monospace;--sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{background:var(--bg);color:var(--tx);font:16px/1.65 var(--sans);overflow-x:hidden;background-image:linear-gradient(#ffffff06 1px,transparent 1px),linear-gradient(90deg,#ffffff06 1px,transparent 1px);background-size:44px 44px}
+a{color:inherit}img,svg{max-width:100%}
+:focus-visible{outline:2px solid var(--ac2);outline-offset:3px}
+.w{max-width:1080px;margin:0 auto;padding:0 20px}
+section{padding:84px 0}
+h2{font-size:clamp(1.5rem,3vw,2rem);line-height:1.2;margin-bottom:8px;letter-spacing:-.01em}
+.sub{color:var(--mu);max-width:62ch;margin-bottom:34px}
+.mono{font-family:var(--mono)}
+/* nav */
+header{position:sticky;top:0;z-index:20;background:#0b0f14e6;backdrop-filter:blur(8px);border-bottom:1px solid var(--bd);transition:padding .2s}
+.nv{display:flex;align-items:center;gap:22px;height:68px;transition:height .2s}
+header.sm .nv{height:52px}
+.logo{font-weight:700;text-decoration:none;font-family:var(--mono);margin-right:auto}
+.logo span{color:var(--ac)}
+nav ul{display:flex;gap:20px;list-style:none;padding:0}
+nav a{color:var(--mu);text-decoration:none;font-size:.9rem;transition:color .15s}nav a:hover{color:var(--tx)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:6px;border:1px solid var(--bd);background:var(--pn);color:var(--tx);text-decoration:none;font:600 .93rem var(--sans);cursor:pointer;transition:transform .15s,border-color .15s,background .15s}
+.btn:hover{transform:translateY(-2px);border-color:var(--ac)}
+.btn.p{background:var(--ac);border-color:var(--ac);color:#06201c}.btn.p:hover{background:#63c4b6}
+.btn.s{padding:7px 13px;font-size:.85rem}
+.btn svg{width:16px;height:16px}
+#mb{display:none;background:none;border:1px solid var(--bd);color:var(--tx);border-radius:6px;width:40px;height:38px;font-size:1.2rem;cursor:pointer}
+/* hero */
+#hero{padding:72px 0 64px}
+.hg{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.st{display:inline-flex;align-items:center;gap:8px;font-size:.82rem;color:var(--mu);border:1px solid var(--bd);border-radius:20px;padding:4px 12px;margin-bottom:22px}
+.st i{width:7px;height:7px;border-radius:50%;background:#3fb950;box-shadow:0 0 0 3px #3fb95026}
+h1{font-size:clamp(2rem,5vw,3.3rem);line-height:1.1;letter-spacing:-.025em;margin-bottom:18px}
+.id{font-family:var(--mono);color:var(--ac);margin-bottom:8px;font-size:.95rem}
+.lead{color:var(--mu);max-width:54ch;margin-bottom:26px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:16px}
+.dl{font-size:.88rem;color:var(--mu)}.dl a{color:var(--ac2)}
+.loc{font-size:.85rem;color:var(--mu);margin-top:18px}
+.term{background:#0a0e13;border:1px solid var(--bd);border-radius:10px;font:.82rem/1.7 var(--mono);overflow:hidden}
+.tb{display:flex;gap:6px;padding:10px 14px;border-bottom:1px solid var(--bd);align-items:center;color:var(--mu);font-size:.75rem}
+.tb b{width:9px;height:9px;border-radius:50%;background:#2a3541}
+.tb span{margin-left:8px}
+#tt{padding:14px 16px;min-height:236px;white-space:pre-wrap;word-break:break-word}
+.o{color:var(--mu)}.g{color:#3fb950}.c::after{content:"▌";animation:bl 1s steps(2) infinite;color:var(--ac)}
+@keyframes bl{50%{opacity:0}}
+.mini{display:flex;align-items:center;padding:12px 16px;border-top:1px solid var(--bd);gap:0}
+.mini span{font-size:.7rem;color:var(--mu);text-align:center;flex:1}
+.mini span::before{content:"";display:block;width:9px;height:9px;border-radius:50%;background:var(--ac);margin:0 auto 4px;opacity:.25;animation:pp 5s infinite}
+.mini span:nth-child(2)::before{animation-delay:1s}.mini span:nth-child(3)::before{animation-delay:2s}.mini span:nth-child(4)::before{animation-delay:3s}.mini span:nth-child(5)::before{animation-delay:4s}
+@keyframes pp{0%,20%,100%{opacity:.25}8%{opacity:1}}
+/* about/skills */
+.ab{display:grid;grid-template-columns:1.4fr 1fr;gap:34px}
+.ab p+p{margin-top:14px}
+.card{background:var(--pn);border:1px solid var(--bd);border-radius:var(--r);padding:20px}
+.pf dt{font-size:.78rem;color:var(--mu)}.pf dd{margin-bottom:12px}.pf dd:last-child{margin:0}
+.sg{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:26px}
+.sg h3,.sg h4{font-size:.95rem;margin-bottom:10px;font-family:var(--mono);color:var(--ac)}
+.sk{display:grid;gap:8px}
+.sk div{border:1px solid var(--bd);border-radius:6px;padding:10px 14px;background:var(--pn);transition:border-color .15s}
+.sk div:hover{border-color:#34495c}
+.sk b{font-size:.93rem}.sk small{display:block;color:var(--mu);font-size:.83rem;line-height:1.5}
+.tag{display:inline-block;font:.72rem var(--mono);color:var(--ac2);border:1px solid var(--bd);padding:2px 8px;border-radius:4px;margin:0 4px 4px 0}
+.tag.l{color:var(--mu)}
+/* workflow */
+.fl{display:flex;flex-wrap:wrap;gap:0;align-items:stretch;margin-bottom:18px}
+.fl button{flex:1 1 100px;background:var(--pn);border:1px solid var(--bd);color:var(--tx);padding:14px 6px;font:.82rem var(--mono);cursor:pointer;position:relative;margin-right:14px;border-radius:6px;transition:border-color .15s,background .15s}
+.fl button:last-child{margin:0}
+.fl button::after{content:"";position:absolute;left:100%;top:50%;width:14px;height:2px;background:var(--bd)}
+.fl button:last-child::after{display:none}
+.fl button:hover{border-color:#34495c}
+.fl button[aria-selected=true]{border-color:var(--ac);background:#4fb3a512;color:var(--ac)}
+.fl button[aria-selected=true]::after{background:var(--ac)}
+#fd{min-height:88px}#fd h3{font-size:1rem;margin-bottom:4px}#fd p{color:var(--mu)}
+/* experience */
+.tl{border-left:2px solid var(--bd);padding-left:22px;display:grid;gap:22px}
+.tl h3{font-size:1.02rem}.tl p,.tl li{color:var(--mu);font-size:.94rem}.tl ul{padding-left:18px;margin-top:6px}
+/* projects */
+.pg{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.pj{display:flex;flex-direction:column;gap:10px;transition:transform .2s,border-color .2s;position:relative}
+.pj:hover,.pj:focus-within{transform:translateY(-4px);border-color:var(--ac)}
+.pj h3{font-size:1.1rem}.pj p{color:var(--mu);font-size:.93rem}
+.pj .role{font:.75rem var(--mono);color:var(--mu)}
+.pj .dv{font-size:.88rem;border-left:2px solid var(--ac);padding-left:10px}
+.pj .ar{font:.75rem var(--mono);color:var(--ac2);background:#0a0e13;border:1px solid var(--bd);border-radius:6px;padding:8px 10px;overflow-wrap:anywhere}
+.pj .bt{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto;padding-top:6px}
+.pj.cr{border-top:3px solid var(--ac2)}.pj.em{border-top:3px solid #e0a458}.pj.po{border-top:3px solid #c98a6b}.pj.ec{border-top:3px solid var(--ac)}
+dialog{background:var(--bg);color:var(--tx);border:1px solid var(--bd);border-radius:12px;width:min(820px,94vw);max-height:90vh;padding:0}
+dialog::backdrop{background:#000b;}
+dialog[open]{animation:dg .2s ease-out}@keyframes dg{from{opacity:0;transform:translateY(10px)}}
+.dh{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--bd);padding:16px 22px;display:flex;justify-content:space-between;gap:12px;align-items:start}
+.dh h3{font-size:1.15rem}
+.db{padding:6px 22px 24px}.db h4{font:600 .82rem var(--mono);color:var(--ac);margin:22px 0 6px}
+.db p,.db li{color:var(--mu);font-size:.94rem}.db ul{padding-left:18px}
+.db pre{font:.78rem/1.6 var(--mono);background:#0a0e13;border:1px solid var(--bd);border-radius:6px;padding:12px;overflow-x:auto;color:var(--ac2)}
+/* misc */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.ct{text-align:center;padding:60px 20px}.ct h2{font-size:clamp(1.7rem,4vw,2.4rem)}.ct .sub{margin:0 auto 26px}.ct .cta{justify-content:center}
+footer{border-top:1px solid var(--bd);padding:28px 0;color:var(--mu);font-size:.88rem}
+.fw{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
+footer a{color:var(--mu);margin-right:16px}footer a:hover{color:var(--tx)}
+.rv{opacity:0;transform:translateY(14px);transition:opacity .5s,transform .5s}.rv.in{opacity:1;transform:none}
+@media(max-width:860px){
+ #mb{display:block}nav{position:absolute;top:100%;left:0;right:0;background:var(--bg);border-bottom:1px solid var(--bd);display:none;padding:12px 20px}
+ nav.o1{display:block}nav ul{flex-direction:column;gap:14px}
+ .hg,.ab,.pg,.two{grid-template-columns:1fr}.nv>.btn.s{display:none}section{padding:60px 0}
+ .fl button{flex:1 1 44%;margin:0 0 10px}.fl button::after{display:none}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute"><symbol id="dli" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 20h16"/></symbol></svg>
+
+<header id="hd"><div class="w nv">
+<a class="logo" href="#hero">vijay<span>.p</span></a>
+<button id="mb" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav">☰</button>
+<nav id="nav" aria-label="Main"><ul>
+<li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#experience">Experience</a></li><li><a href="#projects">Projects</a></li><li><a href="#certs">Certifications</a></li><li><a href="#contact">Contact</a></li>
+</ul></nav>
+<a class="btn s p" data-resume download><svg><use href="#dli"/></svg>Download Resume</a>
+</div></header>
+
+<main>
+<section id="hero"><div class="w hg">
+<div>
+<div class="st"><i></i>Open to DevOps Opportunities</div>
+<p class="id">Vijay P · DevOps Engineer</p>
+<h1>Building Reliable Infrastructure,<br>One Pipeline at a Time.</h1>
+<p class="lead">Computer Science Engineer focused on DevOps, CI/CD automation, containerization, Kubernetes and cloud technologies.</p>
+<div class="cta">
+<a class="btn" href="#projects">View Projects</a>
+<a class="btn p" data-resume download><svg><use href="#dli"/></svg>Download Resume</a>
+<a class="btn" href="#contact">Let's Connect</a>
+</div>
+<p class="dl"><a data-resume download>Download my resume ↓</a></p>
+<p class="loc">Chennai, Tamil Nadu, India</p>
+</div>
+<div class="term" aria-hidden="true">
+<div class="tb"><b></b><b></b><b></b><span>vijay@devbox: ~/ecommerce-platform</span></div>
+<div id="tt"></div>
+<div class="mini"><span>commit</span><span>build</span><span>image</span><span>push</span><span>deploy</span></div>
+</div>
+</div></section>
+
+<section id="about"><div class="w">
+<h2>About</h2><p class="sub">Computer Science and Engineering graduate (2026) with hands-on experience building DevOps workflows and full-stack systems.</p>
+<div class="ab rv">
+<div>
+<p>I enjoy turning development workflows into automated, repeatable deployment processes. My projects cover the path from source code to containers, registry and Kubernetes, and I've spent real time debugging the things that break along the way.</p>
+<p>My day-to-day toolkit: Linux, Git, CI/CD, Docker, Kubernetes, Jenkins, GitHub Actions, Python and Bash automation, REST APIs, and cloud fundamentals.</p>
+</div>
+<dl class="card pf">
+<dt>Education</dt><dd>B.E. Computer Science &amp; Engineering</dd>
+<dt>Graduation</dt><dd>2026</dd>
+<dt>Based in</dt><dd>Chennai, India</dd>
+<dt>Focus</dt><dd>DevOps / Cloud / Automation</dd>
+</dl></div></div></section>
+
+<section id="skills"><div class="w">
+<h2>Technical Skills</h2><p class="sub">Grouped by what I use them for. Items marked "fundamentals" are ones I'm still building depth in.</p>
+<div class="sg rv" id="sg"></div>
+</div></section>
+
+<section id="workflow"><div class="w">
+<h2>How I ship code</h2><p class="sub">The workflow I follow in my projects. Select a stage for details.</p>
+<div class="fl" id="fl" role="tablist" aria-label="DevOps workflow stages"></div>
+<div class="card" id="fd" role="tabpanel" aria-live="polite"></div>
+</div></section>
+
+<section id="experience"><div class="w">
+<h2>Hands-on Engineering Experience</h2>
+<p class="sub">Built and deployed full-stack applications while implementing DevOps workflows including containerization, CI/CD automation and Kubernetes deployment.</p>
+<div class="tl rv">
+<div><h3>Project-based DevOps practice</h3><p>Self-directed projects</p>
+<ul><li>Containerized multi-service apps with Docker and Docker Compose.</li><li>Built a Jenkins pipeline that builds, tags and publishes images, then deploys to Kubernetes.</li><li>Debugged real pipeline failures: Docker daemon permissions, Jenkins-to-cluster connectivity, TLS errors, missing manifests.</li></ul></div>
+<div><h3>Django Web Development Intern</h3><p>Phenoix Softech, Madurai · 2024</p>
+<ul><li>Built backend modules with Django, Python and MySQL, including REST endpoints tested with Swagger and Postman.</li><li>Worked with Git branching and pull-request workflows in a development team.</li></ul></div>
+</div></div></section>
+
+<section id="projects"><div class="w">
+<h2>Projects</h2><p class="sub">Open a project for the full case study.</p>
+<div class="pg" id="pg"></div>
+</div></section>
+
+<section id="perspective"><div class="w">
+<h2>Engineering + Product Perspective</h2>
+<div class="two"><p class="sub" style="margin:0">I also have frontend and UI/UX experience. Understanding the application end-to-end helps me collaborate between development and infrastructure, and think about what a deployment actually delivers to users.</p>
+<p><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">React</span><span class="tag">UI/UX</span></p></div>
+</div></section>
+
+<section id="github"><div class="w">
+<h2>GitHub</h2><p class="sub">Repositories and technical experiments live on GitHub. Code is the best evidence, so start there.</p>
+<div class="cta"><a class="btn" href="https://github.com/vijaypandiselvam" target="_blank" rel="noopener">github.com/vijaypandiselvam</a><a class="btn" href="https://github.com/cythonvijay/ecommerce-platform" target="_blank" rel="noopener">ecommerce-platform repo</a></div>
+</div></section>
+
+<section id="certs"><div class="w">
+<h2>Certifications &amp; Education</h2>
+<div class="two rv" style="margin-top:20px">
+<div class="card"><h3 style="font-size:1rem;margin-bottom:8px">Certifications</h3>
+<p>DevOps and Kubernetes — Udemy</p><p>JavaScript — Great Learning</p><p>Fundamentals of UI/UX Design — Microsoft, Coursera</p><p>Engineering and Product Design — Microsoft, Coursera</p><p>UI/UX: Vital Skills — Techkriti, IIT Kanpur</p><p>Responsive Design — freeCodeCamp</p><p>Engineering Graphics — NPTEL</p></div>
+<div class="card"><h3 style="font-size:1rem;margin-bottom:8px">Education</h3>
+<p>B.E. Computer Science and Engineering</p><p class="o">Saint Michael College of Engineering and Technology, 2026</p></div>
+</div></div></section>
+
+<section id="contact"><div class="w"><div class="card ct">
+<h2>Let's build something reliable.</h2>
+<p class="sub">I'm open to entry-level DevOps, Cloud and automation opportunities in Chennai and across India.</p>
+<div class="cta">
+<a class="btn p" href="mailto:vijaynisha343@gmail.com">Email Me</a>
+<a class="btn" href="https://linkedin.com/in/vijay-p" target="_blank" rel="noopener">LinkedIn</a>
+<a class="btn" href="https://github.com/vijaypandiselvam" target="_blank" rel="noopener">GitHub</a>
+<a class="btn" data-resume download><svg><use href="#dli"/></svg>Download Resume</a>
+</div></div></div></section>
+</main>
+
+<footer><div class="w fw">
+<div><strong>Vijay P</strong> · DevOps Engineer<br>Built with curiosity, automation and a lot of debugging.</div>
+<div><a href="https://github.com/vijaypandiselvam" target="_blank" rel="noopener">GitHub</a><a href="https://linkedin.com/in/vijay-p" target="_blank" rel="noopener">LinkedIn</a><a data-resume download href="#">Resume</a><br>© 2026 Vijay P. All rights reserved.</div>
+</div></footer>
+
+<dialog id="dlg" aria-labelledby="dt"><div class="dh"><div><h3 id="dt"></h3><span class="role" id="dr"></span></div><button class="btn s" id="dx" aria-label="Close case study">Close</button></div><div class="db" id="dbd"></div></dialog>
+
+<script>
+// Single resume asset: replace this file to update every Download Resume button.
+const RESUME="Vijay_P_DevOps_Engineer_Resume.pdf";
+document.querySelectorAll("[data-resume]").forEach(a=>{a.href=RESUME;a.setAttribute("download","Vijay_P_DevOps_Engineer_Resume.pdf")});
+const GH="https://github.com/vijaypandiselvam";
+const $=s=>document.querySelector(s),esc=t=>t;
+const reduce=matchMedia("(prefers-reduced-motion:reduce)").matches;
+
+// skills
+const SK={"DevOps & CI/CD":[["Git / GitHub","Branching, pull requests and release workflows."],["GitHub Actions","Workflow-based automated checks for code changes."],["Jenkins","Automated CI/CD workflows connecting GitHub, container builds and deployment."]],
+"Containers & Orchestration":[["Docker","Containerized applications and multi-service environments with Docker and Compose."],["Kubernetes","Deployments, services, namespaces and application orchestration with kubectl."]],
+"Programming & Automation":[["Python","Backend services, scripting and AST-based analysis."],["Bash","Shell scripting for automation on Linux."],["JavaScript","Frontend and Node.js development."]],
+"Cloud & Infrastructure":[["Linux","Command line, permissions and troubleshooting."],["Microsoft Azure","VMs, Blob Storage and Azure AD fundamentals."],["AWS (fundamentals)","Learning core services next."],["Terraform (fundamentals)","Learning Infrastructure as Code concepts."],["Nginx","Web serving and reverse proxy basics."]],
+"Monitoring & Troubleshooting":[["Grafana","Dashboards for continuous monitoring."],["Prometheus (familiar)","Metrics collection basics."],["Root cause analysis","Tracing pipeline and deployment failures to their source."]],
+"Databases":[["PostgreSQL","Backend database for my e-commerce and EMBERS projects."],["MySQL","Used with Django ORM during internship."],["SQLite","Local and offline data storage."]],
+"Backend, APIs & Development":[["FastAPI / REST","API design, tested with Swagger and Postman."],["React","Frontend for the e-commerce platform."],["Node.js","Backend for the pottery e-commerce project."]]};
+$("#sg").innerHTML=Object.entries(SK).map(([g,a])=>`<div><h3>${g}</h3><div class="sk">${a.map(([n,d])=>`<div><b>${n}</b><small>${d}</small></div>`).join("")}</div></div>`).join("");
+
+// workflow
+const WF=[["Developer","Writes and tests code locally, often using Docker Compose so the local setup mirrors the deployed one."],["GitHub","Source of truth. Branches and pull requests; pushes trigger the pipeline."],["CI Pipeline","Jenkins pulls the repository and runs the pipeline stages automatically."],["Code Analysis","Static checks before build. CRONOS explores AST-based rule checks for this stage."],["Docker Build","Frontend and backend are built into versioned container images."],["Registry","Images are published to Docker Hub so the cluster can pull them."],["Kubernetes","Manifests for namespaces, deployments and services roll out the new images."],["Application","The running app, verified with post-deployment health checks."]];
+const fl=$("#fl");
+WF.forEach((s,i)=>{const b=document.createElement("button");b.textContent=s[0];b.setAttribute("role","tab");b.onclick=()=>pick(i);fl.append(b)});
+function pick(i){[...fl.children].forEach((b,j)=>b.setAttribute("aria-selected",i==j));$("#fd").innerHTML=`<h3>${WF[i][0]}</h3><p>${WF[i][1]}</p>`}
+pick(0);
+if(!reduce){let i=0;const t=setInterval(()=>{if(fl.dataset.u)return clearInterval(t);pick(i=(i+1)%WF.length)},2600);fl.addEventListener("click",()=>fl.dataset.u=1)}
+
+// projects
+const P=[
+{k:"ec",t:"Cloud-Native E-Commerce CI/CD Platform",d:"Full-stack e-commerce platform containerized and deployed using a complete CI/CD workflow.",tags:["React","FastAPI","PostgreSQL","Docker","Docker Compose","Jenkins","GitHub","Kubernetes"],role:"Developer / DevOps",dv:"Jenkins pipeline from GitHub to Docker Hub to Kubernetes, with kubectl health checks.",arch:"Frontend → Backend API → PostgreSQL\nGitHub → Jenkins → Docker Build → Registry → Kubernetes",gh:"https://github.com/cythonvijay/ecommerce-platform",
+ov:"A React, FastAPI and PostgreSQL e-commerce application used as a vehicle to build a complete delivery pipeline.",pr:"Getting an app from source code to a running Kubernetes deployment without manual steps.",
+im:["Containerized frontend, backend and PostgreSQL with Docker.","Docker Compose environment for local multi-container development.","Kubernetes manifests for Namespaces, Deployments and Services."],
+wf:"GitHub → Jenkins → image build and versioning → Docker Hub → kubectl deploy → post-deployment health checks.",
+ch:"Docker daemon permission errors, Jenkins-to-cluster connectivity, TLS certificate errors and missing manifests, each traced to root cause.",lr:"Pipelines fail at the boundaries between tools. Reading logs methodically matters more than knowing the tool list."},
+{k:"cr",t:"CRONOS — Code Analyzer",d:"AST-based static code analysis platform designed to analyze Python code changes and identify potential issues.",tags:["Python","FastAPI","AST","GitHub Actions","Gemini API"],role:"Developer",dv:"GitHub Actions workflow runs automated checks on code changes.",arch:"Code Commit → GitHub → CRONOS → AST Analysis → Results",gh:GH,
+ov:"A tool that checks proposed Python changes against defined rules by parsing code structure, not executing it.",pr:"Catching rule violations in code changes early and automatically, without running or transmitting the source.",
+im:["Python AST parsing to inspect code structure.","FastAPI backend exposing the analysis.","GitHub integration and an automated check workflow.","Optional AI-assisted analysis via the Gemini API."],
+wf:"Commit → GitHub → GitHub Actions → CRONOS → analysis results.",ch:"Designing rules that flag real issues without noisy false positives.",lr:"How Python's AST works, and how to put a check into a CI gate."},
+{k:"em",t:"EMBERS — Offline Disaster Coordination Platform",d:"Offline-capable IoT disaster coordination platform designed for communication and coordination in low-connectivity environments.",tags:["React Native","Expo","FastAPI","PostgreSQL","SQLite","MQTT","Mosquitto","Leaflet","Maps"],role:"Developer",dv:"PostgreSQL for production, SQLite for development and offline use; MQTT broker via Mosquitto.",arch:"Mobile App ⇄ MQTT (Mosquitto) ⇄ FastAPI ⇄ PostgreSQL\nOffline: local SQLite",gh:GH,
+ov:"A mobile-first platform for coordination when connectivity is poor or unavailable.",pr:"Disaster areas often lose reliable internet, but people still need to communicate and coordinate.",
+im:["React Native and Expo mobile app.","FastAPI backend with PostgreSQL.","MQTT messaging through a Mosquitto broker.","Map-based coordination with Leaflet.","SQLite for local and offline data."],
+wf:"Backend and broker run as services; database choice differs between development and production.",ch:"Designing data flow for unreliable networks.",lr:"Offline-first thinking and lightweight messaging with MQTT."},
+{k:"po",t:"Manamadurai Pottery — E-Commerce Platform",d:"E-commerce platform created to showcase and sell traditional Manamadurai pottery products online.",tags:["Node.js","TypeScript","PostgreSQL","Docker"],role:"Developer / DevOps",dv:"Containerized development environment with Docker.",arch:"Client → Node.js API → PostgreSQL (Docker)",gh:GH,
+ov:"An online catalog concept for traditional pottery from my home town, Manamadurai.",pr:"Local craft products have limited online visibility.",
+im:["Product catalog.","Node.js and TypeScript backend API.","PostgreSQL database.","Docker-based development setup."],
+wf:"Services run in containers so the environment is the same on any machine.",ch:"Modeling a catalog that suits handmade products.",lr:"Structuring a typed Node.js backend and keeping the environment reproducible."}];
+$("#pg").innerHTML=P.map((p,i)=>`<article class="card pj ${p.k} rv"><h3>${p.t}</h3><p>${p.d}</p><div class="role">Role: ${p.role}</div><div class="ar">${p.arch.replace(/\n/g,"<br>")}</div><div>${p.tags.map(t=>`<span class="tag">${t}</span>`).join("")}</div><p class="dv"><b>DevOps:</b> ${p.dv}</p><div class="bt"><a class="btn s" href="${p.gh}" target="_blank" rel="noopener">GitHub</a><button class="btn s" data-i="${i}">View Project</button></div></article>`).join("");
+const dlg=$("#dlg");
+document.querySelectorAll("[data-i]").forEach(b=>b.onclick=()=>{const p=P[b.dataset.i],L=a=>`<ul>${a.map(x=>`<li>${x}</li>`).join("")}</ul>`,S=(n,h)=>`<h4>${n}</h4>${h}`;
+$("#dt").textContent=p.t;$("#dr").textContent="Role: "+p.role;
+$("#dbd").innerHTML=S("01 — Overview",`<p>${p.ov}</p>`)+S("02 — Problem",`<p>${p.pr}</p>`)+S("03 — Architecture",`<pre>${p.arch}</pre>`)+S("04 — Implementation",L(p.im))+S("05 — DevOps Workflow",`<p>${p.wf}</p>`)+S("06 — Technologies",`<p>${p.tags.map(t=>`<span class="tag">${t}</span>`).join("")}</p>`)+S("07 — Challenges",`<p>${p.ch}</p>`)+S("08 — What I Learned",`<p>${p.lr}</p>`)+S("09 — Repository",`<p><a href="${p.gh}" target="_blank" rel="noopener" style="color:var(--ac2)">${p.gh.replace("https://","")}</a></p>`);
+dlg.showModal();dlg.scrollTop=0});
+$("#dx").onclick=()=>dlg.close();dlg.addEventListener("click",e=>{if(e.target===dlg)dlg.close()});
+
+// nav
+const hd=$("#hd"),nav=$("#nav"),mb=$("#mb");
+addEventListener("scroll",()=>hd.classList.toggle("sm",scrollY>40),{passive:true});
+mb.onclick=()=>{const o=nav.classList.toggle("o1");mb.setAttribute("aria-expanded",o)};
+nav.addEventListener("click",e=>{if(e.target.tagName=="A"){nav.classList.remove("o1");mb.setAttribute("aria-expanded",false)}});
+
+// reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll(".rv").forEach(el=>io.observe(el));
+
+// terminal
+const L=[["$ git push origin main",0],["remote: triggering Jenkins pipeline",1],["$ docker build -t ecommerce-backend .",0],["Successfully built image",1],["$ docker push <registry>/ecommerce-backend",0],["$ kubectl apply -f k8s/",0],["deployment.apps/backend configured","g"],["service/backend unchanged","g"]];
+const tt=$("#tt");
+function show(n){tt.innerHTML=L.slice(0,n).map(([t,c])=>`<div class="${c===1?"o":c==="g"?"g":""}">${t}</div>`).join("")}
+if(reduce)show(L.length);else{let li=0,ci=0,el;(function step(){if(li>=L.length){tt.lastChild.classList.add("c");return}
+if(!ci){el=document.createElement("div");if(L[li][1]===1)el.className="o";if(L[li][1]==="g")el.className="g";tt.append(el)}
+const [t,c]=L[li];if(c){el.textContent=t;li++;return void setTimeout(step,250)}
+el.textContent=t.slice(0,++ci);if(ci>=t.length){ci=0;li++;setTimeout(step,350)}else setTimeout(step,32)})()}
+</script>
+</body>
+</html>
